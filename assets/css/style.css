@@ -1,0 +1,779 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+  background: #ececec;
+}
+
+/* home start */
+.heading {
+  background: #185B79;
+  text-align: center;
+  color: #fff;
+  padding: 30px 0;
+}
+.box .each-box a {
+  color: #fff;
+}
+.box .each-box a:hover {
+  text-decoration: none;
+}
+.box .each-box {
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.box .each-box i {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.row {
+  margin: 15px 0;
+}
+.box1 {
+  background: #0AA699;
+}
+.box1:hover {
+  background: #0a9489;
+}
+.box2 {
+  background: #0090D9;
+}
+.box2:hover {
+  background: #0380bf;
+}
+.box3 {
+  background: #745F88;
+}
+.box3:hover {
+  background: #6a4e84;
+}
+.footer {
+  background: #434343;
+  text-align: center;
+  color: #fff;
+}
+.footer p {
+  padding: 20px 0;
+}
+/* home end */
+
+/* all login start */
+.login {
+  max-width: 480px;
+  margin: 100px auto;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.login .content {
+  padding: 45px 30px 70px;
+}
+.login img {
+  width: 200px;
+}
+.login h2 {
+  padding-top: 15px;
+  color: #0072BC;
+}
+.login form {
+  margin-top: 30px;
+}
+.login input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.login p {
+  margin-bottom: 0;
+  text-align: left;
+}
+.login .button {
+  width: 100%;
+  background: #00897B;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.login .button:hover {
+  background: rgb(1, 110, 99);
+  color: #fff;
+}
+.login a {
+  color: #fff;
+}
+.login a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/* all login end */
+
+/* admin profile start */
+.navTop {
+  background: #0082BE;
+  color: #fff;
+  max-height: 56px;
+  padding-left: 0px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.navTop ul {
+  margin-right: 2rem;
+}
+.navTop a {
+  color: #fff;
+}
+.navbar-brand {
+  font-size: 28px;
+  width: 230px;
+  background: #11a1e0;
+  text-align: center;
+  height: 56px;
+  z-index: 1;
+}
+.navbar-brand img {
+  width: 40px;
+}
+.brndHide {
+  font-size: 28px;
+  display: none;
+}
+.brndHide:hover {
+  text-decoration: none;
+}
+.navIcon i {
+  font-size: 19px;
+  margin-left: 12px;
+}
+.navbar-toggler {
+  display: block !important;
+  margin-right: 1rem;
+}
+.navbar-toggler i {color: #fff;}
+.profileDrop, .bellDrop {
+  top: 109%;
+  right: 0;
+  left: auto;
+  box-shadow: 0px 1px 5px 1px #c1c1c1;
+}
+.bellDrop {
+  min-width: 14rem;
+  font-size: 15px;
+}
+.bellDrop .header {
+  background: rgb(98, 171, 101);
+  color: #fff;
+  padding: 10px 21px;
+}
+.bellDrop .noti-footer {
+  background: #EEEEEE;
+  padding: 10px 43px;
+  cursor: pointer;
+}
+.bellDrop .dropdown-item span {
+  color: #6c757d;
+}
+.bellDrop .dropdown-divider {
+  margin: 4px 0;
+}
+.profileDrop a, .bellDrop a {
+  color: #16181B;
+}
+.sideMenu {
+  width: 230px;
+  background: #fafdff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  padding-top: 70px;
+  overflow: auto;
+  transition: left 0.3s ease,
+    width 0.3s ease;
+  box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
+}
+.sideMenu::-webkit-scrollbar {
+  width: 0;
+}
+.sideTop {
+  padding: 10px 10px 22px;
+  display: flex;
+}
+.sideTop img {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  border-radius: 50%;
+  height: fit-content;
+}
+.sideTop p {
+  margin-bottom: 0;
+}
+.sideBottom a {
+  color: #323431;
+}
+.sideBottom ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sideBottom a {
+  text-decoration: none;
+  border-left: 3px solid #F7F9F6;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  font-size: 1.03em;
+}
+.sideBottom .arrwRght {
+  width: 0;
+}
+.sideTop .name {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+}
+.sideTop .desg {
+  letter-spacing: -0.25px;
+  font-size: 15px;
+}
+.sideDropdwn {
+  background: #e4e4e4;
+}
+.sideDropdwn a {
+  border: none;
+}
+.sideBottom a i {
+  width: 25px;
+  flex: 0 0 auto;
+}
+.sideBottom a:hover, .aActive {
+  background: #efecec;
+  border-color: #0082BE !important;
+}
+.appContent {
+  background: #E5E5E5;
+  min-height: calc(100vh - 50px);
+  margin: 50px 0 0 230px;
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+}
+.appTitle .col-sm-6 {
+  padding: 0;
+}
+.appTitle {
+  background: #fff;
+  margin: -30px -30px 30px;
+  padding: 20px 30px;
+  align-items: center;
+  box-shadow: 0px 0px 7px -5px #000;
+}
+.appTitle h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+.appTitle p {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 14px;
+}
+.appTitle ul {
+  margin-bottom: -5px;
+}
+.breadcrumb {
+  background: #fff;
+}
+
+.admin-profile .conBotInnr {
+  background: #E0F2F1;
+  padding: 20px 100px;
+  border-radius: 3px;
+}
+.admin-profile .conBotInnr h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marginBottom {
+  margin-bottom: 30px;
+}
+.conBotInnr {
+  font-size: 14px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+   0 1px 5px 0 rgba(0, 0, 0, 0.12),
+   0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.footer {
+  background: #434343;
+  text-align: center;
+  color: #fff;
+  margin: 0 -30px;
+}
+.footer p {
+  padding: 20px 0;
+}
+/* admin profile end */
+
+/* admin home start */
+.admin-home .conBotInnr {
+  background: #E0F2F1;
+  padding: 80px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.admin-home .conBotInnr img {
+  padding-bottom: 20px;
+}
+.admin-home .contentBottom h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* admin home end */
+
+/* admin select supervisor start*/
+.admin-select-supervisor .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+.admin-select-supervisor .conBotInnr .input-id,
+ .conBotInnr .see-result {
+  margin-bottom: 4rem;
+}
+/* admin select supervisor end*/
+
+/* admin settings start*/
+.admin-settings .conBotInnr {
+  background: #E0F2F1;
+  padding: 20px 100px;
+  border-radius: 3px;
+}
+.admin-settings .conBotInnr h4 {
+  text-align: center;
+  padding: 20px 0;
+}
+/* admin settings end*/
+
+/* admin student info start */
+.admin-student-info .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+.admin-student-info .conBotInnr .admin-input {
+  margin-bottom: 40px;
+}
+/* admin student info end */
+
+/* admin student request start */
+.admin-student-request .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.admin-student-request .conBotInnr h2 {
+  margin-bottom: 20px;
+}
+.admin-student-request .conBotInnr h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.admin-student-request .conBotInnr .table {
+  font-size: 16px;
+}
+.admin-student-request .conBotInnr .table .accept-btn {
+  background: #03af03;
+  color: #fff;
+}
+.admin-student-request .conBotInnr .table .reject-btn {
+  background: #ff2929;
+  color: #fff;
+}
+.admin-student-request .conBotInnr .table .details-btn {
+  background: #008dce;
+  color: #fff;
+}
+.admin-student-request .details-table {
+  text-align: left;
+  padding: 40px 100px 0;
+}
+/* admin student request end */
+
+/* admin teacher info start*/
+.admin-teacher-info .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+.admin-teacher-info .conBotInnr .admin-input {
+  margin-bottom: 40px;
+}
+.admin-teacher-info .conBotInnr h6 {
+  margin: 1rem 0;
+}
+.admin-teacher-info .conBotInnr .table {
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+/* admin teacher info end*/
+
+/* student assigned supervisor start */
+.student-assigned-supervisor .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+/* student assigned supervisor end */
+
+/* student choice supervisor start */
+.student-choice-supervisor .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+/* student choice supervisor end */
+
+/* student home start */
+.student-home .conBotInnr {
+  background: #E0F2F1;
+  padding: 80px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.student-home .conBotInnr img {
+  padding-bottom: 20px;
+}
+.student-home .contentBottom h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* student home end */
+
+/* student interest start */
+.student-interest .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+  text-align: center;
+}
+.student-interest .conBotInnr h2 {
+  margin-bottom: 20px;
+}
+.student-interest .conBotInnr form {
+  text-align: left;
+}
+.student-interest .conBotInnr form label {
+  font-size: 18px;
+}
+.student-interest .conBotInnr form input {
+  margin-right: 10px;
+}
+.student-interest .conBotInnr .btn {
+  background: #0082BE;
+  color: #fff;
+  padding: 5px 30px;
+  margin-top: 10px;
+}
+.student-interest .conBotInnr .btn:hover {
+  box-shadow: 6px 6px 10px 5px #ccc;
+}
+/* student interest end */
+
+/* student meeting update start */
+.student-meeting-update .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+.student-meeting-update .conBotInnr .meeting-item {
+  margin-bottom: 30px;
+}
+/* student meeting update end */
+
+/* student next meeting start */
+.student-next-meeting .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+/* student next meeting end */
+
+/* student profile start */
+.student-profile .conBotInnr {
+  background: #E0F2F1;
+  padding: 20px 100px;
+  border-radius: 3px;
+}
+.student-profile .conBotInnr h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* student profile end */
+
+/* student request to supervisor start */
+.student-request-to-supervisor .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+/* student request to supervisor end */
+
+/* student settings start */
+.student-settings .conBotInnr {
+  background: #E0F2F1;
+  padding: 20px 100px;
+  border-radius: 3px;
+}
+.student-settings .conBotInnr h4 {
+  text-align: center;
+  padding: 20px 0;
+}
+/* student settings end */
+
+/* student teacher info start */
+.student-teacher-info .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+.student-teacher-info .conBotInnr .teacher-input {
+  margin-bottom: 40px;
+}
+.student-teacher-info .conBotInnr h6 {
+  margin: 1rem 0;
+}
+.student-teacher-info .conBotInnr .table {
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+/* student teacher info end */
+
+/* student work progress start */
+.student-work-progress .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+.student-work-progress .work-progress-result {
+  margin-bottom: 40px;
+}
+/* student work progress end */
+
+/* teacher current work or thesis start */
+.teacher-current-work-thesis .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.teacher-current-work-thesis .conBotInnr h2 {
+  margin-bottom: 20px;
+}
+.teacher-current-work-thesis .conBotInnr .table {
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+/* teacher current work or thesis end */
+
+/* teacher home start */
+.teacher-home .conBotInnr {
+  background: #E0F2F1;
+  padding: 80px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.teacher-home .conBotInnr img {
+  padding-bottom: 20px;
+}
+.teacher-home .contentBottom h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* teacher home end */
+
+/* teacher interest start */
+.teacher-interest .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+  text-align: center;
+}
+.teacher-interest .conBotInnr h2 {
+  margin-bottom: 20px;
+}
+.teacher-interest .conBotInnr form {
+  text-align: left;
+}
+.teacher-interest .conBotInnr form label {
+  font-size: 18px;
+}
+.teacher-interest .conBotInnr form input {
+  margin-right: 10px;
+}
+.teacher-interest .conBotInnr .btn {
+  background: #0082BE;
+  color: #fff;
+  padding: 5px 30px;
+  margin-top: 10px;
+}
+.teacher-interest .conBotInnr .btn:hover {
+  box-shadow: 6px 6px 10px 5px #ccc;
+}
+/* teacher interest end */
+
+/* teacher meeting schedule start */
+.teacher-meeting-schedule .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.teacher-meeting-schedule .conBotInnr h2 {
+  margin-bottom: 20px;
+}
+.teacher-meeting-schedule .conBotInnr .table {
+  font-size: 16px;
+}
+.teacher-meeting-schedule .conBotInnr .table input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+}
+/* teacher meeting schedule end */
+
+/* teacher preference start */
+.teacher-preference .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+/* teacher preference end */
+
+/* teacher previous research start */
+.teacher-prev-research .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.teacher-prev-research .conBotInnr h2 {
+  margin-bottom: 20px;
+}
+.teacher-prev-research .conBotInnr .table {
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+/* teacher previous research end */
+
+/* teacher previous thesis start */
+.teacher-prev-thesis .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+.teacher-prev-thesis .conBotInnr h2 {
+  margin-bottom: 20px;
+}
+.teacher-prev-thesis .conBotInnr .table {
+  font-size: 16px;
+  margin-bottom: 3rem;
+}
+/* teacher previous thesis end */
+
+/* teacher profile start */
+.teacher-profile .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px;
+  border-radius: 3px;
+}
+.teacher-profile .conBotInnr h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* teacher profile end */
+
+/* teacher set meeting time start */
+.teacher-set-meeting-time .conBotInnr {
+  background: #E0F2F1;
+  padding: 40px 100px 80px;
+  border-radius: 3px;
+  text-align: center;
+}
+.teacher-set-meeting-time .conBotInnr h2 {
+  margin-bottom: 30px;
+}
+.teacher-set-meeting-time .conBotInnr form {
+  text-align: left;
+}
+.teacher-set-meeting-time .conBotInnr form label {
+  font-size: 18px;
+}
+.teacher-set-meeting-time .conBotInnr form input {
+  margin-right: 10px;
+}
+.teacher-set-meeting-time .conBotInnr .btn {
+  background: #0082BE;
+  color: #fff;
+  padding: 5px 30px;
+  margin-top: 10px;
+  float: right;
+}
+.teacher-set-meeting-time .conBotInnr .btn:hover {
+  box-shadow: 6px 6px 10px 5px #ccc;
+}
+/* teacher set meeting time end */
+
+/* teacher settings start */
+.teacher-settings .conBotInnr {
+  background: #E0F2F1;
+  padding: 20px 100px;
+  border-radius: 3px;
+}
+.teacher-settings .conBotInnr h4 {
+  text-align: center;
+  padding: 20px 0;
+}
+/* teacher settings end */
+
+
+@media (max-width: 575px) {
+  .heading img {
+    width: 60px;
+  }
+  .heading h1 {
+    font-size: 25px;
+  }
+  .box .each-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 0rem !important;
+    z-index: 100;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  #sideMnu {
+    width: 0 ;
+    z-index: 1;
+  }
+  #appcontnt {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  .brndHide {
+    display: block;
+  }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Next Meeting Time - Supervisor Selection and Monitoring System</title>
+  <link rel="shortcut icon" href="assets/img/diuLogo.png" type="image/x-icon">
+  <!-- bootstrap css link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- google font link -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet">
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- nav section start -->
+  <section>
+    <nav class="navbar navbar-expand navbar-fixed-top navTop">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/diuLogo.png" alt="">
+      </a>
+      <button class="navbar-toggler" onclick="toggleHide()">
+          <i class="fas fa-bars"></i>
+      </button>
+      <a class="brndHide" href="#">Student Portal</a>
+      <ul class="navbar-nav ml-auto">
+  
+        <li class="nav-item navIcon dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-bell"></i>
+          </a>
+          <div class="dropdown-menu bellDrop" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Lisa request you <br>
+            <span>3 min ago</span> </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Update meeting schedule <br>
+            <span>5 min ago</span> </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Anik request you<br>
+            <span>1 day ago</span> </a>
+            <div class="dropdown-divider"></div>
+            <a class="noti-footer">See all notifications.</a>
+          </div> 
+        </li>
+  
+        <li class="nav-item navIcon dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-alt"></i>
+          </a>
+          <div class="dropdown-menu profileDrop" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./student-settings.html">Settings</a>
+            <a class="dropdown-item" href="./student-profile.html">Profile</a>
+            <a class="dropdown-item" href="./index.html">Logout</a>    
+          </div>      
+        </li>
+      </ul>
+    </nav>
+    </section>
+    <!-- nav section end -->
+  
+    <!-- side menu start -->
+    <aside class="sideMenu" id="sideMnu">
+      <div class="sideTop">
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="">
+        <div class="text">
+          <p class="name">Hashibur</p>
+          <p class="desg">162-15-1000</p>
+        </div>
+      </div>
+      <div class="sideBottom">
+        <ul>
+          <li>
+            <a href="./student-interest.html">
+                <i class="fas fa-palette"></i>
+              <span>Student Interest</span>
+            </a>
+          </li>
+          <li>
+            <a href="./student-choice-supervisor.html">
+                <i class="fas fa-chart-pie"></i>
+              <span>Choice Supervisor</span>
+            </a>
+          </li>
+          <li>
+            <a href="./student-request-to-supervisor.html">
+                <i class="fas fa-pen-square"></i>
+              <span>Request to Supervisor</span>
+            </a>
+          </li>
+          <li>
+            <a href="./student-assigned-supervisor.html">
+                <i class="fas fa-table"></i>
+              <span>See Assigned Supervisor</span>
+            </a>
+          </li>
+          <li>
+            <a href="./student-meeting-update.html">
+                <i class="fas fa-file-alt"></i>
+              <span>Meeting Update</span>
+            </a>
+          </li>
+          <li>
+            <a href="./student-work-progress.html">
+                <i class="fas fa-file-alt"></i>
+              <span>Progress of Work</span>
+            </a>
+          </li>
+          <li>
+            <a class="aActive" href="./student-next-meeting.html">
+                <i class="fas fa-file-alt"></i>
+              <span>Next Meeting Time</span>
+            </a>
+          </li>
+          <li>
+            <a href="./student-teacher-info.html">
+                <i class="fas fa-file-alt"></i>
+              <span>See a Teacher Info.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- side menu end -->
+  
+    <!-- app content start -->
+    <main class="appContent" id="appcontnt">
+      <div class="appTitle row">
+        <div class="col-sm-6">
+          <h1> <i class="fas fa-palette"></i>Next Meeting Time</h1>
+        </div>
+        <div class="col-sm-6">
+            <ul class="breadcrumb float-right">
+              <li class="breadcrumb-item">
+                <i class="fas fa-home"></i>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="./student-home.html" style="color:#000">Student Portal</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="./student-next-meeting.html" style="color:#000">Next Meeting Time</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+  
+      <div class="row contentBottom student-next-meeting">
+        <div class="col marginBottom">
+          <div class="conBotInnr">
+            <div>
+              <div class="col-md-12 text-center">
+                <h2>Your Next Meeting Schedule</h2>
+              </div>
+            </div>
+            <div>
+              <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Time Slot</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <td>30/01/2020</td>
+                      <td>10-11am</td>
+                    </tbody>
+                    <tbody>
+                      <td>15/02/2020</td>
+                      <td>12-01pm</td>
+                    </tbody>    
+                  </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer start -->
+    <section class="footer">
+      <p>All Rights Reserved &copy; Daffodil International University</p>
+    </section>
+    <!-- footer end -->
+  
+    </main>
+    <!-- app content end -->
+
+
+  <!-- custom js -->
+
+  <!-- toggle sidebar -->
+  <script>
+    function toggleHide() {
+      var a = document.getElementById("sideMnu");
+      if(a.style.width === "0px") {
+        document.getElementById("sideMnu").style = "width: 230px;";
+        document.getElementById("appcontnt").style = "margin-left: 230px;";
+      }
+      else {
+        document.getElementById("sideMnu").style = "width: 0px;";
+        document.getElementById("appcontnt").style = "margin-left: 0px;";
+      }
+    }
+  </script>
+
+  <!-- bootstrap js link -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
